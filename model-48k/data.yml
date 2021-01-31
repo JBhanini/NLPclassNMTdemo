@@ -4,7 +4,7 @@ data:
   train_features_file: src-train-bpe-48k.txt
   train_labels_file: tgt-train-bpe-48k.txt
   eval_features_file: src-val-bpe-48k.txt
-  eval_labels_file: tgt-val-bpe-bpe-48k.txt
+  eval_labels_file: tgt-val-bpe-48k.txt
   source_vocabulary: src-vocab-48k.txt
   target_vocabulary: tgt-vocab-48k.txt
  

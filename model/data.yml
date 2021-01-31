@@ -4,7 +4,7 @@ data:
   train_features_file: src-train-bpe.txt
   train_labels_file: tgt-train-bpe.txt
   eval_features_file: src-val-bpe.txt
-  eval_labels_file: tgt-val-bpe-bpe.txt
+  eval_labels_file: tgt-val-bpe.txt
   source_vocabulary: src-vocab.txt
   target_vocabulary: tgt-vocab.txt
  
