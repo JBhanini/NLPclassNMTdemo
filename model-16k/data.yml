@@ -1,0 +1,22 @@
+model_dir: run/
+ 
+data:
+  train_features_file: src-train-bpe-16k.txt
+  train_labels_file: tgt-train-bpe-16k.txt
+  eval_features_file: src-val-bpe-16k.txt
+  eval_labels_file: tgt-val-bpe-bpe-16k.txt
+  source_vocabulary: src-vocab-16k.txt
+  target_vocabulary: tgt-vocab-16k.txt
+ 
+train:
+  save_checkpoints_steps: 100
+ 
+  eval:
+  eval_delay: 3600  
+  external_evaluators: bleu
+  early_stopping:
+    metric: bleu
+    min_improvement: 0.2
+    steps: 4
+infer:
+    batch_size: 15
