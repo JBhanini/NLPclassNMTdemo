@@ -12,7 +12,11 @@ train:
   save_checkpoints_steps: 1000
  
   eval:
-    eval_delay: 3600  
-    external_evaluators: BLEU
+  eval_delay: 3600  
+  external_evaluators: bleu
+  early_stopping:
+    metric: bleu
+    min_improvement: 0.2
+    steps: 4
 infer:
     batch_size: 32
